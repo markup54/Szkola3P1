@@ -17,6 +17,13 @@ public class Main {
         Klasa kl1 = new Klasa(nauczyciel2,"3P");
         kl1.dodajUczniaDoKlasy(uczen2);
         kl1.dodajUczniaDoKlasy(uczen2);
-
+        Szkola szkola = Szkola.getSzkola(); //Singleton
+        szkola.dodajUczniaDoKlasy(uczen1,kl1);
+        Wychowawca nauczyciel3 = new Wychowawca("Bertram",30,"Matematyka");
+        szkola.utworzKlase(kl1);
+        Klasa kl2 = new Klasa(nauczyciel3,"1P");
+        szkola.utworzKlase(kl2);
+        System.out.println();
+        szkola.dodajUczniaDoKlasy(uczen1,kl2);
     }
 }

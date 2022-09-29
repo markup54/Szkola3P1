@@ -23,6 +23,15 @@ public class Klasa {
         this.nazwa = nazwa;
     }
 
+    @Override
+    public String toString() {
+        return "Klasa{" +
+                "wychowawca=" + wychowawca +
+                "/n, uczniowie=" + uczniowie +
+                ", nazwa='" + nazwa + '\'' +
+                '}';
+    }
+
     /**
      * Metoda pozwala dodać ucznia do klasy jeżeli tam go nie ma
      * @param uczen  - obiekt klasy Uczen, który będzie dodawany do klasy
@@ -35,5 +44,17 @@ public class Klasa {
         else{
             uczniowie.add(uczen);
         }
+    }
+
+    public Wychowawca getWychowawca() {
+        return wychowawca;
+    }
+
+    public ArrayList<Uczen> getUczniowie() {
+        return uczniowie;
+    }
+
+    public String getNazwa() {
+        return nazwa;
     }
 }
