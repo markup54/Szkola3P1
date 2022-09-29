@@ -13,5 +13,10 @@ public class Main {
         Nauczyciel nauczyciel1 = new Nauczyciel("Edmund",60, "przedmioty zawodowe");
         nauczyciel1.dyzuruj();
         System.out.println(nauczyciel1);
+        Wychowawca nauczyciel2 = new Wychowawca("Kunegunda",20,"przedmioty zawodowe");
+        Klasa kl1 = new Klasa(nauczyciel2,"3P");
+        kl1.dodajUczniaDoKlasy(uczen2);
+        kl1.dodajUczniaDoKlasy(uczen2);
+
     }
 }
